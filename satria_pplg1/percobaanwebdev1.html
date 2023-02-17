@@ -26,7 +26,8 @@
     background-color: #142bbf42;
     width: 100%;
     height: 100%;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    /* opacity: 0.5; */
+    transition: background 0.3s, border-radius 0.3s, opacity 0.9s;
     display: flex;
     justify-content: space-around;
 }
@@ -45,13 +46,23 @@
     width: 50px;
 }
 .menu{
-    background-color: brown;
-    height:12px;
-    width:105px;
+    /* background-color: brown; */
+    height:33px;
+    width:750px;
+}
+.menu li a{
+    color : #ffffff;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color : blue;
+    border-bottom : 1px solid white;
 }
 .menu_list{
     display: flex;
+    justify-content: space-around;
     list-style-type: none;
+    font-weight: bold;
 }
 .wadahkirikanan{
     background-color: #ffffff;
@@ -78,23 +89,36 @@
     font-family: "Samsung", Sans-serif;
     align-items: center;
     text-align: center;
-    padding: 1%;
-    padding-top: 1px;
+    padding: 10px;
 }
 
 .container{
     background-color: yellow;
-    height: 500px;
+    height: 537px;
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
-.jurusan .container .kartu{
+.container .kartu{
     background-color: green;
     width: 400px;
     height : 240px;
+    font-size: 20px;
+    color: #0089FD;
+    font-family: "Roboto", Sans-serif;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    border-color: rgba(237, 237, 237, 1);
+    padding-bottom: 10px;
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 25px;
+    font-size: 1.6666666666667rem;
+    line-height: 1.2em;
 }
 </style>
 <body>
@@ -110,14 +134,16 @@
             </div>
             <div class="menu">
                 <ul class="menu_list">
-                    <li>Profil</li>
-                    <li>Data selokah</li>
-                    <li>Media Informasi</li>
-                    <li>Jurusan</li>
-                    <li>Informasi</li>
+                    <li><a href="profil.html">Profil<a></li>
+                    <li><a href="datasekolah.html">Data selokah</a></li>
+                    <li><a>Media Informasi<a></li>
+                    <li><a>Jurusan<a></li>
+                    <li><a>Informasi<a></li>
+                    <li><a>Informasi<a></li>
+                    <li><a>Informasi<a></li>
                 </ul>
             </div>
-            <div class="logo_baru"></div>
+            <!-- <div class="logo_baru"></div> -->
         </div>
     </div>
     <div class="div3"></div>
@@ -128,7 +154,7 @@
     <div class="jurusan">
        <h1> Jurusan </h1>
         <div class="container">
-            <div class="kartu"></div>
+            <div class="kartu"><a href="https://www.smkmutucikampek.sch.id/wp-content/uploads/2020/04/OTKP1.1-750x410.jpg">Otomatisasi Tata Kelola Perkantoran<a></div>
             <div class="kartu"></div>
             <div class="kartu"></div>
             <div class="kartu"></div>
